@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-color: #1a1a2e;
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: "";
+    background-image: url("../image/ChatGPT\ Image\ Jul\ 15\,\ 2026\,\ 09_56_19\ PM.png");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+
+.bar {
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+}
+
+.nav {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+}
+
+.logo-container {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.logo-container img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo-container p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+    color: black;
+}
+
+nav ol {
+    display: inline-block;
+    width: 68%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+nav ol li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ol li a {
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+
+
+}
+
+nav ol li a:hover {
+    border-bottom: 2px solid rgb(0, 38, 255);
+    padding-bottom: 5px;
+    transition: all 0.5s ease;
+    color: rgb(64, 90, 238);
+    text-transform: normal;
+
+}
+
+nav ol li:hover {
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+.hearding {
+    width: 100%;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 8px;
+    background-color: purple;
+    color: whitesmoke;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.gallery-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-pic img {
+    width: 100%;
+    max-width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-pic p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav ol {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .logo-container {
+        width: 100%;
+        display: block;
+    }
+}

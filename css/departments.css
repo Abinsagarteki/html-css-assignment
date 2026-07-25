@@ -1,0 +1,239 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-color: #1a1a2e;
+    position: relative;
+    z-index: 0;
+}
+
+body {
+    background-color: white;
+}
+
+.bar {
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+}
+
+.nav {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    background-color: #ffff;
+}
+
+.logo-container {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.logo-container img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo-container p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+nav ul {
+    display: inline-block;
+    width: 68%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid rgb(0, 38, 255);
+    padding-bottom: 5px;
+    transition: all 0.5s ease;
+    color: rgb(64, 90, 238);
+    text-transform: normal;
+
+}
+
+nav ul li:hover {
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+.admission {
+
+    position: absolute;
+}
+
+.hearding header {
+    background-color: purple;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.department_table section {
+    width: 100%;
+    background-color: #ffff;
+    box-sizing: border-box;
+}
+
+.department_table table {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ffff;
+}
+
+.department_table table thead tr th {
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.department_table table thead tr th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.703);
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.department_table table tbody tr td {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.heading_table {
+    color: blue;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 3px solid blue;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+}
+
+.main .computer,
+.commerce,
+.chemistry,
+.meconomicsaths,
+.physics,
+.english,
+.maths,
+.economics {
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    transition: .3s;
+
+}
+
+.main .computer:hover,
+.commerce:hover,
+.chemistry:hover,
+.meconomicsaths:hover,
+.physics:hover,
+.english:hover,
+.maths:hover,
+.economics:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.main .computer img,
+.commerce img,
+.chemistry img,
+.maths img,
+.physics img,
+.english img,
+.economics img {
+    width: 200px;
+    height: 113px;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.main .computer header,
+.commerce header,
+.chemistry header,
+.maths header,
+.physics header,
+.english header,
+.economics header {
+    color: blue;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.main p {
+    margin: 10px 10px 12px 10px;
+    line-height: 20px;
+
+}
+
+.add {
+    width: 100%;
+    background-color: purple;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: left;
+}

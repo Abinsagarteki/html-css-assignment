@@ -1,0 +1,403 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    padding-bottom: 40px;
+}
+
+.bar {
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+}
+
+.nav {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+}
+
+.logo-container {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.logo-container img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.logo-container p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+nav ul {
+    display: inline-block;
+    width: 68%;
+    text-align: right;
+    vertical-align: middle;
+    transition: .3s;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid rgb(0, 38, 255);
+    padding-bottom: 5px;
+    color: rgb(64, 90, 238);
+    text-transform: normal;
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+nav ul li:hover {
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+
+.heading-one {
+    text-align: center;
+}
+
+.heading-one header {
+    display: inline-block;
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+
+}
+
+.heading-one header h1 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.hero-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #000000;
+    text-shadow: none;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #444;
+}
+
+.mid {
+    color: rgb(0, 0, 0);
+    width: 80%;
+    margin: 15px auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-one {
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(11, 11, 179);
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.button-two {
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(255, 238, 0);
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.button-one:hover {
+    background-color: #5605dfcc;
+    transform: translateY(-5px);
+}
+
+.button-two:hover {
+    background-color: #bdb622;
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .mid {
+        width: 95%;
+    }
+
+    .button-one,
+    .button-two {
+        width: 80%;
+        margin-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.text {
+    margin-top: 10px;
+}
+
+
+
+.section {
+    padding: 50px 5%;
+}
+
+h2 {
+    text-align: center;
+    color: #4B0082;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+    transition: .3s;
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about .image {
+    flex: 1;
+    min-width: 300px;
+
+}
+
+.about .image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+
+}
+
+.about .content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about .content h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.about .content p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4B0082;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+.principal div {
+    flex: 1;
+    min-width: 300px;
+}
+
+.principal div h2 {
+    text-align: left;
+}
+
+.principal div p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+
+.highlight {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.highlight .box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+    transition: .3s;
+    flex: 1;
+    min-width: 150px;
+}
+
+.highlight .box:hover {
+    transform: translateY(-5px);
+}
+
+.highlight .box h1 {
+    color: #4B0082;
+    font-size: 36px;
+    margin-bottom: 5px;
+    text-shadow: none;
+}
+
+.highlight .box p {
+    font-size: 14px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+footer {
+    background-color: purple;
+    color: white;
+    text-align: left;
+    display: flex;
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}

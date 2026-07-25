@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 50px 20px;
+}
+
+#main {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.heading h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+div[class^="input"],
+.password,
+.email,
+.number_box,
+.date,
+.course,
+.textarea,
+.file-upload {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.cheak,
+.checkbox {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+    list-style: none;
+}
+
+.cheak label,
+.checkbox label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.button-group {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.submit-btn,
+.reset-btn {
+    display: inline-block;
+    width: 48%;
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.button-group a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    margin-right: 2%;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.reset-btn {
+    background-color: #6c757d;
+}
+
+.reset-btn:hover {
+    background-color: #5a6268;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #main {
+        padding: 20px;
+    }
+
+    .heading h1 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    #main {
+        max-width: 550px;
+        padding: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #main {
+        max-width: 650px;
+        padding: 50px;
+    }
+}

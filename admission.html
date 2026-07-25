@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>admission form</title>
+    <link rel="stylesheet" href="css/admission.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <div id="main">
+        <div class="heading">
+            <header>
+                <h1>admission form</h1>
+            </header>
+        </div>
+        <div class="input box">
+            <label for="text">name of student</label>
+            <input type="text" name="student name" id="text">
+        </div>
+        <div class="password">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="email">
+            <label for="mail">email address</label>
+            <input type="email" name="email" id=" email">
+        </div>
+        <div class="number_box">
+            <label for="number">phone number</label>
+            <input type="number" name="number" id="number">
+        </div>
+        <div class="date">
+            <label for="date">date of birth</label>
+            <input type="date" id="date">
+        </div>
+        <div class="course">
+            <label for="course">course</label>
+            <select name="course" id="course">
+                <option value="">Select a course</option>
+                <option value="science">Science</option>
+                <option value="commerce">Commerce</option>
+                <option value="arts">Arts</option>
+            </select>
+        </div>
+        <div class="cheak">
+            <label>
+                <input type="radio" name="gender" value="male" required>
+                Male
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="female">
+                Female
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" id="others">
+                Others
+            </label>
+        </div>
+        <div class="textarea">
+            <label for="comments">additional comments</label>
+            <textarea id="comments" name="comments" rows="4">
+            </textarea>
+        </div>
+        <div class="file-upload">
+            <label for="file">upload document</label>
+            <input type="file" id="file" name="file">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="terms" id="terms" required>
+                I agree to the terms and conditions
+            </label>
+        </div>
+        <div class="button-group">
+            <button type="submit" class="submit-btn"><a href="../html/home.html">Submit</a></button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+    </div>
+</body>
+
+</html>
